@@ -82,8 +82,8 @@ int main() {
         cout << size << "\t\t" << duration.count();
         cout << (result.empty() ? "\t(WARNING: No triplets)" : "") << endl;
         
-        if (duration.count() > 10000) {
-            cout << "\nStopping test: Execution time exceeds 10 seconds\n";
+        if (duration.count() > 50000) {
+            cout << "\nStopping test: Execution time exceeds 50 seconds\n";
             break;
         }
     }
